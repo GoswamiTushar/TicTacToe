@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 import SquareComponent from './square';
+import Heading from './heading';
 
 const initialState = ['', '', '', '', '', '', '', '', ''];
 
@@ -61,8 +62,9 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App fc-center jc-center">
       <div className="board">
+        <Heading />
         <div className="row">
           <SquareComponent
             content={gameState[0]}
@@ -106,7 +108,9 @@ function App() {
             onClick={() => updateState(8)}
           />
         </div>
-        <button onClick={clearGame}>Clear Game</button>
+        <div className="fc-center jc-center" style={{ margin: '1rem' }}>
+          <button onClick={clearGame}>Clear Game</button>
+        </div>
       </div>
     </div>
   );
