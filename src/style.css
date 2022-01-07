@@ -1,0 +1,29 @@
+.square {
+  border: solid 2px black;
+  height: 100px;
+  width: 100px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.fc-center {
+  display: flex;
+  align-items: center;
+}
+
+.board {
+  min-height: 100px;
+  min-width: 100px;
+}
